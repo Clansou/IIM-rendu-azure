@@ -1,8 +1,8 @@
 {
-  "name": "",
+  "name": "bayrou-functions",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/src/functions/*.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
