@@ -9,16 +9,22 @@
     "clean": "rimraf dist",
     "prestart": "npm run clean && npm run build",
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest createUser loginUser getHealth integration --silent"
   },
   "dependencies": {
     "@azure/cosmos": "^4.5.1",
     "@azure/functions": "^4.0.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.0",
     "@types/node": "18.x",
     "azure-functions-core-tools": "^4.x",
+    "jest": "^29.5.0",
     "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
     "typescript": "^4.0.0"
   }
 }
