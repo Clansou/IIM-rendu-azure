@@ -1,6 +1,7 @@
 {
   "version": "2.0",
   "functionTimeout": "00:05:00",
+  "functionAppScaleLimit": 200,
   "languageWorkers": {
     "node": {
       "arguments": ["--inspect=5858"]
@@ -18,8 +19,11 @@
     "id": "Microsoft.Azure.Functions.ExtensionBundle",
     "version": "[4.*, 5.0.0)"
   },
-  "cors": {
-    "allowedOrigins": ["*"],
-    "supportCredentials": false
-  }
+  "functions": [
+    "getHealth",
+    "createUser", 
+    "loginUser",
+    "getVotes",
+    "postVote"
+  ]
 }
